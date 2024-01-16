@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Input from './Input';
+import Button  from './Button';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const PrintCourseName=()=>{
+  return(
+    <>
+    <h1>Welcome to React Class</h1>
+    </>
   );
+}
+
+const PrintDuration=()=>{
+  return(<>
+  <h3>Class-7 to 8 Pm</h3>
+  </>)
+}
+
+const App = () => {
+  return (
+    <>
+      <center>
+        <h1>Welcome to Functional Component</h1>
+        <hr />
+        <label>User Name</label>
+        <Input />
+        <label>Email ID</label>
+        <Input />
+        <label>Password</label>
+        <Input />
+        <Button />
+        
+{/*         <PrintCourseName />
+        <PrintDuration /> */}
+        </center>
+    </>
+  )
 }
 
 export default App;
