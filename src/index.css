@@ -17,3 +17,8 @@ header {
   height: 100px;
   width: 100%;
 }
+nav {
+  background-color: rgb(9, 127, 121);
+  height: 40px;
+  width: 100%;
+}
